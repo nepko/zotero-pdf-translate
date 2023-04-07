@@ -11,6 +11,7 @@ export const gptTranslate = <TranslateTaskProcessor>async function (data) {
     apiUrl,
     {
       headers: {
+        "origin": "https://ai1.chagpt.fun",
         "Content-Type": "application/json",
         Authorization: `Bearer ${data.secret}`,
       },
